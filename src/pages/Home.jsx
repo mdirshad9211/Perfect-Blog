@@ -1,8 +1,8 @@
 import React from 'react'
-
-function Home() {
+import Posts from "../components/Posts"
+function Home()  {
   return (
-    <div>Home</div>
+    <Posts/>
   )
 }
 

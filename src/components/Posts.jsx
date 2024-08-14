@@ -1,8 +1,10 @@
-import React, { useState } from 'react'
-import { DUMMY_POSTS } from '../data'
-import PostItem from '../components/PostItem';
-const CategoryPosts = () => {
-  const [posts,setPosts] = useState(DUMMY_POSTS)
+import React, { useState } from 'react';
+import PostItem from './PostItem';
+import { DUMMY_POSTS } from '../data';
+
+const Posts = () => {
+  const [posts, setPosts] = useState(DUMMY_POSTS);
+
   return (
     <section className="posts">
       {posts.length > 0 ? (
@@ -23,7 +25,7 @@ const CategoryPosts = () => {
         <h2 className="center">No posts Found</h2>
       )}
     </section>
-  )
-}
+  );
+};
 
-export default CategoryPosts
+export default Posts;
