@@ -6,7 +6,7 @@ const AuthorPosts = () => {
   return (
     <section className="author_posts">
       {posts.length > 0 ? (
-        <div className="container author_posts-container">
+        <div className="container posts_container">
           {posts.map(({ id, thumbnail, category, title, description, authorID }) => (
             <PostItem 
               key={id} 
